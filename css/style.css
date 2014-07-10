@@ -10,7 +10,7 @@ p {
   color: #12022b;
 }
 .wrapper {
-  width: 75%;
+  width: 1090px;
   margin: 0 auto;
   background: #12022b;
 }
@@ -126,20 +126,20 @@ p {
   color: #12022b;
 }
 footer {
-  display: table;
-  width: 101%;
-  height: 400px;
   background-color: #12022b;
   text-align: center;
   color: #eaeac1;
-}
-footer .footer-container {
-  display: table-cell;
-  vertical-align: middle;
-  wight: 100%;
   height: 400px;
 }
+footer .footer-container {
+  padding-top: 100px;
+  height: 400px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 footer span {
+  width: 100%;
   display: block;
   line-height: 1;
 }
