@@ -11,12 +11,14 @@
 
 .layout-section {
 	width: 95%;
+	height: 50%;
 	margin: 15px auto;
-	.clearfix();
-
 	
 	.layout-section-content {
+		display: table-cell;
+		vertical-align: middle;
 		width: 50%;
+		height: 50%;
 
 		.content-wrapper {
 			width: 90%;
@@ -29,14 +31,6 @@
 			margin: 0 auto;
 		}
 		
-		&.left {
-			float: left;
-		}
-
-		&.right {
-			float: right;
-		}
-
 		&.full {
 			width: 100%;
 		}
@@ -53,9 +47,10 @@
 	}
 
 	.layout-section {
+		display: inherit;
 		.layout-section-content {
 			width: 100%;
-			float: none;
+			display: inherit;
 		}
 	}
 }
