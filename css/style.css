@@ -117,7 +117,7 @@ p {
 }
 .site-header .site-nav li {
   display: inline-block;
-  width: 14.285714285714285%;
+  width: 14.28571429%;
 }
 footer {
   display: table;
@@ -174,11 +174,12 @@ p {
 }
 .people-list {
   text-align: center;
+  margin-bottom: 30px;
 }
 .people-list li {
-  width: 150px;
-  height: 150px;
+  width: 20%;
   display: inline-block;
+  margin-left: 30px;
 }
 .people-list li .people-img-container {
   position: relative;
