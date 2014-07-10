@@ -1,5 +1,7 @@
 .ui-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .container {
   width: 1200px;
@@ -35,7 +37,61 @@
 .layout-section .layout-section-content.right {
   float: right;
 }
-header {
+.layout-section .layout-section-content.full {
+  width: 100%;
+}
+.site-header {
   width: 100%;
   text-align: center;
+}
+.site-header img {
+  width: 100%;
+}
+.site-header .site-nav ul {
+  margin: 25px 0;
+}
+.site-header .site-nav li {
+  display: inline-block;
+  width: 14.28571429%;
+}
+.section-hd {
+  text-align: center;
+}
+.back-to-top {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  clear: both;
+  text-align: center;
+  text-decoration: none;
+}
+.back-to-top:before {
+  content: '- ';
+}
+.back-to-top:after {
+  content: ' -';
+}
+.back-to-top:hover {
+  text-decoration: underline;
+}
+.people-list {
+  text-align: center;
+}
+.people-list li {
+  display: inline-block;
+}
+.people-list li .people-img-container {
+  position: relative;
+}
+.people-list li .people-img-container img {
+  border-radius: 50%;
+}
+.people-list li .people-img-container .bridal-list-name {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
 }
