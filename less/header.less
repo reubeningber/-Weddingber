@@ -1,7 +1,27 @@
 .site-header {
 	width: 100%;
 	text-align: center;
+	background: @blue;
+	color: @yellow;
 
+	.site-title {
+		display: table;
+		width: 100%;
+		height: 400px;
+
+		.logo {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 100px;
+			font-family: @caviar-regular;
+
+			span {
+				font-size: 200px;
+				font-weight: 100;
+				font-family: @lakesight;
+			}
+		}
+	}
 	img {
 		width: 100%;
 	}

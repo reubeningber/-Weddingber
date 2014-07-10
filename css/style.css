@@ -1,14 +1,23 @@
-.ui-list {
-  list-style-type: none;
+* {
   margin: 0;
   padding: 0;
 }
-.container {
+html {
+  background-color: #ace2c1;
+}
+.wrapper {
   width: 75%;
   margin: 0 auto;
+  background: #12022b;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #ace2c1;
 }
 .layout-section {
-  margin-bottom: 35px;
+  width: 95%;
+  margin: 15px auto;
   zoom: 1;
 }
 .layout-section:before {
@@ -24,10 +33,11 @@
   width: 50%;
 }
 .layout-section .layout-section-content .content-wrapper {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
 }
 .layout-section .layout-section-content img {
+  max-width: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -40,7 +50,10 @@
 .layout-section .layout-section-content.full {
   width: 100%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 95%;
+  }
   .container {
     width: 95%;
   }
@@ -48,13 +61,47 @@
     width: 100%;
     float: none;
   }
-  .layout-section .layout-section-content img {
-    max-width: 100%;
-  }
+}
+@font-face {
+  font-family: 'caviar_dreamsregular';
+  src: url('../fonts/CaviarDreams-webfont.eot');
+  src: url('../fonts/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/CaviarDreams-webfont.woff') format('woff'), url('../fonts/CaviarDreams-webfont.ttf') format('truetype'), url('../fonts/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lakesight_personal_use_onlyRg';
+  src: url('../fonts/lakesight_personaluseonly-webfont.eot');
+  src: url('../fonts/lakesight_personaluseonly-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lakesight_personaluseonly-webfont.woff') format('woff'), url('../fonts/lakesight_personaluseonly-webfont.ttf') format('truetype'), url('../fonts/lakesight_personaluseonly-webfont.svg#lakesight_personal_use_onlyRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.ui-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .site-header {
   width: 100%;
   text-align: center;
+  background: #12022b;
+  color: #eaeac1;
+}
+.site-header .site-title {
+  display: table;
+  width: 100%;
+  height: 400px;
+}
+.site-header .site-title .logo {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 100px;
+  font-family: 'caviar_dreamsregular';
+}
+.site-header .site-title .logo span {
+  font-size: 200px;
+  font-weight: 100;
+  font-family: 'lakesight_personal_use_onlyRg';
 }
 .site-header img {
   width: 100%;
@@ -65,6 +112,33 @@
 .site-header .site-nav li {
   display: inline-block;
   width: 14.28571429%;
+}
+footer {
+  display: table;
+  width: 100%;
+  height: 400px;
+  background-color: #12022b;
+  text-align: center;
+  color: #eaeac1;
+}
+footer .footer-container {
+  display: table-cell;
+  vertical-align: middle;
+  wight: 100%;
+  height: 400px;
+}
+footer span {
+  display: block;
+  line-height: 1;
+}
+footer span.ft-prompt {
+  font-size: 75px;
+  font-weight: 100;
+  font-family: 'lakesight_personal_use_onlyRg';
+}
+footer span.ft-hashtag {
+  font-size: 125px;
+  font-family: 'caviar_dreamsregular';
 }
 .section-hd {
   text-align: center;

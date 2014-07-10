@@ -1,10 +1,17 @@
-.container {
+.wrapper {
 	width: 75%;
 	margin: 0 auto;
+	background: @blue;
+}
+.container {
+	width: 95%;
+	margin: 0 auto;
+	background-color: @green;
 }
 
 .layout-section {
-	margin-bottom: 35px;
+	width: 95%;
+	margin: 15px auto;
 	.clearfix();
 
 	
@@ -12,11 +19,12 @@
 		width: 50%;
 
 		.content-wrapper {
-			width: 75%;
+			width: 90%;
 			margin: 0 auto;
 		}
 
 		img {
+			max-width: 100%;
 			display: block;
 			margin: 0 auto;
 		}
@@ -36,7 +44,10 @@
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+	.wrapper {
+		width: 95%;
+	}
 	.container {
 		width: 95%;
 	}
@@ -45,10 +56,6 @@
 		.layout-section-content {
 			width: 100%;
 			float: none;
-
-			img {
-				max-width: 100%;
-			}
 		}
 	}
 }
