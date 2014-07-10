@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
 }
-html {
+html,
+body {
   background-color: #ace2c1;
+}
+p {
+  color: #12022b;
 }
 .wrapper {
   width: 75%;
@@ -141,9 +145,11 @@ footer span.ft-hashtag {
   font-family: 'caviar_dreamsregular';
 }
 .section-hd {
+  font-family: 'caviar_dreamsregular';
   text-align: center;
 }
 .back-to-top {
+  font-family: 'caviar_dreamsregular';
   display: block;
   width: 100%;
   padding-top: 15px;
