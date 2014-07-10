@@ -103,9 +103,6 @@ p {
 .site-header img {
   width: 100%;
 }
-.site-header .site-nav ul {
-  margin: 0 auto;
-}
 .site-header .site-nav li {
   text-align: center;
   display: inline-block;
