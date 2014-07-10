@@ -145,8 +145,12 @@ footer span.ft-hashtag {
   font-family: 'caviar_dreamsregular';
 }
 .section-hd {
+  font-size: 40px;
   font-family: 'caviar_dreamsregular';
   text-align: center;
+}
+p {
+  font-size: 14px;
 }
 .back-to-top {
   font-family: 'caviar_dreamsregular';
@@ -170,12 +174,16 @@ footer span.ft-hashtag {
   text-align: center;
 }
 .people-list li {
+  width: 150px;
+  height: 150px;
   display: inline-block;
 }
 .people-list li .people-img-container {
   position: relative;
+  width: 100%;
 }
 .people-list li .people-img-container img {
+  width: 100%;
   border-radius: 50%;
 }
 .people-list li .people-img-container .bridal-list-name {
@@ -184,6 +192,5 @@ footer span.ft-hashtag {
   top: 50%;
   left: 0;
   right: 0;
-  width: 200px;
-  height: 200px;
+  width: 100%;
 }
