@@ -29,6 +29,8 @@
 	}
 
 	.site-nav {
+		background: @blue;
+		margin: 0 auto;
 	
 		li {
 			text-align: center;
@@ -52,6 +54,12 @@
 					color: @blue;
 				}
 			}
+		}
+
+		&.stuck {
+			width: 100%;
+			top: 0;
+			position: fixed;
 		}
 	}
 }
