@@ -96,13 +96,16 @@ p.bold {
   width: 100%;
   height: 400px;
 }
-.site-header .site-title .logo {
+.site-header .site-title .site-title-wrapper {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
+}
+.site-header .site-title .site-title-wrapper .logo {
   font-size: 90px;
   font-family: 'caviar_dreamsregular';
 }
-.site-header .site-title .logo span {
+.site-header .site-title .site-title-wrapper .logo span {
   display: inline-block;
   font-size: 200px;
   font-weight: 100;
@@ -119,7 +122,7 @@ p.bold {
 .site-header .site-nav li {
   text-align: center;
   display: inline-block;
-  width: 14.285714285714285%;
+  width: 14.28571429%;
   height: 50px;
   font-family: 'caviar_dreamsregular';
   font-size: 20px;
@@ -236,4 +239,8 @@ footer span.ft-hashtag {
   -moz-transition: opacity 200ms ease-in;
   -o-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in;
+}
+.sub-hd {
+  font-family: 'caviar_dreamsregular';
+  margin-bottom: 15px;
 }
