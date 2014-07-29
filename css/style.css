@@ -112,6 +112,11 @@ p.bold {
   font-family: 'lakesight_personal_use_onlyRg';
   margin-left: 8px;
 }
+@media screen and (max-width: 800px) {
+  .site-header .site-title .site-title-wrapper .logo span {
+    font-size: 100px;
+  }
+}
 .site-header img {
   width: 100%;
 }
