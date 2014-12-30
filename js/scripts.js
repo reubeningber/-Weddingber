@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	$('.js-fit-text').fitText();
+
+	$('body').fitVids();
 	
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
