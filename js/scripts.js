@@ -17,4 +17,14 @@ $(document).ready(function() {
 	    }
 	  });
 	});
+
+	 $('#clock').countdown('2015/10/11').on('update.countdown', function(event) {
+		var $this = $(this).html(event.strftime(''
+	    + '<span class="digits">%-D</span> Day%!d '
+	    + '<span class="digits">%H</span> Hours '
+	    + '<span class="digits">%M</span> Minutes '
+	    + '<span class="digits">%S</span> Seconds'));
+	 });
+
+	 
 });

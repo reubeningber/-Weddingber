@@ -136,7 +136,7 @@ a:hover {
 .site-header .site-nav li {
   text-align: center;
   display: inline-block;
-  width: 14.28571429%;
+  width: 14.285714285714285%;
   height: 50px;
   font-family: 'caviar_dreamsregular';
   font-size: 20px;
@@ -171,19 +171,27 @@ footer .footer-container {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-footer span {
+footer .ft-text {
   width: 100%;
   display: block;
   line-height: 1;
 }
-footer span.ft-prompt {
+footer .ft-text.ft-prompt {
   font-size: 75px;
   font-weight: 100;
   font-family: 'lakesight_personal_use_onlyRg';
 }
-footer span.ft-hashtag {
+footer .ft-text.ft-hashtag {
   font-size: 125px;
   font-family: 'caviar_dreamsregular';
+}
+footer #clock {
+  font-size: 24px;
+  font-family: 'caviar_dreamsregular';
+  margin: 0 0 25px 0;
+}
+footer #clock .digits {
+  display: inline-block;
 }
 .section-hd {
   font-size: 40px;
