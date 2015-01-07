@@ -132,33 +132,39 @@ a:hover {
 .site-header .site-nav {
   background: #12022b;
   margin: 0 auto;
+  zoom: 1;
+  display: block;
+}
+.site-header .site-nav:before {
+  content: '';
+  display: block;
+}
+.site-header .site-nav:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 .site-header .site-nav li {
+  float: left;
+  width: 16.66666667%;
+}
+.site-header .site-nav a {
   text-align: center;
-  display: inline-block;
-  width: 14.28571429%;
+  color: #ace2c1;
+  display: block;
+  width: 100%;
   height: 50px;
-  font-family: 'caviar_dreamsregular';
-  font-size: 20px;
   padding-top: 10px;
+  font-size: 18px;
+  font-family: 'caviar_dreamsregular';
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.site-header .site-nav li a {
-  color: #ace2c1;
-  text-decoration: none;
-}
-.site-header .site-nav li:hover {
+.site-header .site-nav a:hover {
   background-color: #ace2c1;
-}
-.site-header .site-nav li:hover a {
   color: #12022b;
-}
-.site-header .site-nav.stuck {
-  width: 100%;
-  top: 0;
-  position: fixed;
+  text-decoration: none;
 }
 footer {
   background-color: #12022b;
@@ -242,6 +248,10 @@ footer span.ft-hashtag {
 }
 .back-to-top:hover {
   text-decoration: none;
+}
+.video {
+  max-width: 860px;
+  margin: 0 auto;
 }
 .people-list {
   margin: 25px auto;
