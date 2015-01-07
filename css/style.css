@@ -321,28 +321,6 @@ footer #clock .digits {
   font-family: 'caviar_dreamsregular';
   margin-bottom: 15px;
 }
-#locations {
-  list-style: none;
-  width: 250px;
-  float: left;
-}
-#locations .destination-item {
-  padding: 10px;
-  float: left;
-  position: relative;
-  z-index: 20;
-  border-top: 2px solid #12022b;
-  border-bottom: 2px solid #12022b;
-}
-#locations .destination-item:hover,
-#locations .destination-item.hover {
-  background: #ffe8b2 url(../img/shadow.png) 128px 0 repeat-y;
-}
-#locations .destination-item:hover h3,
-#locations .destination-item.hover h3 {
-  color: red;
-  text-shadow: 0 1px 0px rgba(255, 255, 255, 0.3);
-}
 .destination-guide {
   zoom: 1;
 }
@@ -355,10 +333,33 @@ footer #clock .digits {
   display: table;
   clear: both;
 }
-#map_canvas {
+#locations {
+  list-style: none;
+  width: 31.25%;
+  background-color: #12022b;
+  color: #ace2c1 !important;
+  float: left;
+}
+#locations .destination-item {
   width: 100%;
-  height: 400px;
-  width: 300px;
+  padding: 10px;
+  float: left;
+  position: relative;
+  z-index: 20;
+  border-bottom: 2px solid #ace2c1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#locations .destination-item:hover,
+#locations .destination-item.hover {
+  color: #12022b;
+  background: #ace2c1;
+  border-bottom: 2px solid #12022b;
+}
+#map_canvas {
+  width: 31.25%;
+  height: 480px;
   float: left;
   position: relative;
   z-index: 30 !important;
@@ -367,22 +368,24 @@ footer #clock .digits {
   width: 300px;
 }
 #more-info {
-  width: 340px;
+  width: 37.5%;
+  height: 480px;
   float: right;
-  background: #ffe8b2;
+  background: #12022b;
   padding: 20px;
-  height: 360px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 #more-info * {
   position: relative;
   z-index: 40;
 }
 #more-info > div {
-  background: #e9e2bf;
+  background: #ace2c1;
   -moz-box-shadow: 0 0 14px rgba(70, 49, 1, 0.5);
   -webkit-box-shadow: 0 0 14px rgba(70, 49, 1, 0.5);
   padding: 20px;
-  height: 320px;
 }
 .longdesc {
   display: none;
