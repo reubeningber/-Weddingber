@@ -1,0 +1,107 @@
+/*-------------------------------------------- */
+/** LESS Hat Vendor Lib */
+/*-------------------------------------------- */
+
+/**
+ * Less Hat contains many useful mixins including CSS 3 properties that require prefixes. 
+ * See https://github.com/csshat/lesshat/blob/master/README.md for your options.
+ */
+@import "_less/vendor/lesshat";
+
+
+/*-------------------------------------------- */
+/** Clearless Vendor Lib */
+/*-------------------------------------------- */
+
+/**
+ * Clearless contains some useful helper mixins including .font-size-rems(), .clearfix etc. 
+ * See vendor/clearless/* for your options.
+ */
+@import "_less/vendor/clearless/all";
+
+
+/*-------------------------------------------- */
+/** Reset (Normalize ) */
+/*-------------------------------------------- */
+
+@import "_less/vendor/normalize"; // see http://necolas.github.io/normalize.css/
+
+
+/*-------------------------------------------- */
+/** Import supporting files */
+/*-------------------------------------------- */
+
+@import "_less/base-variables";
+@import "_less/variables";
+@import "_less/z-index";
+
+
+/*-------------------------------------------- */
+/** Base Styles */
+/*-------------------------------------------- */
+
+@import "_less/base";
+
+
+/*-------------------------------------------- */
+/** Typography */
+/*-------------------------------------------- */
+
+@import "_less/typography";
+
+
+/*-------------------------------------------- */
+/** Layout Styles */
+/*-------------------------------------------- */
+
+@import "_less/layout";
+
+
+/*-------------------------------------------- */
+/** Library Styles */
+/*-------------------------------------------- */
+
+ @import "_less/library";
+
+/*-------------------------------------------- */
+/** Other Vendor Styles */
+/*-------------------------------------------- */
+
+@import "_less/vendor/slicknav";
+
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * MODULES
+ * 
+ * Import discrete page components (i.e. navigations, carousels, dialogs, 
+ * widgets etc.). Modules should be able to be moved to different parts of 
+ * layout without breaking.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+
+ @import "_less/modules/header";
+ @import "_less/modules/footer";
+ @import "_less/modules/content";
+ @import "_less/modules/intro";
+ @import "_less/modules/people";
+ @import "_less/modules/destination-guide";
+
+
+/*-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- 
+ *
+ * PAGES
+ * 
+ * Import page specific styles only. This section should remain small as 
+ * most styles should target modules instead.
+ *  
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+
+
+
+
+
+

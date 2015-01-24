@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place this data between the <head> tags of your website -->
+        <title><%= siteTitle %></title>
+        <meta name="description" content="<%= siteDescription %>" />
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@reubeningber">
+        <meta name="twitter:creator" content="@reubeningber">
+        <meta name="twitter:title" content="<%= siteTitle %>">
+        <meta name="twitter:description" content="<%= siteDescription %>">
+        <meta name="twitter:image:src" content="<%= shareImg %>">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="<%= siteTitle %>" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://www.weddingber.com/" />
+        <meta property="og:image" content="<%= shareImg %>" />
+        <meta property="og:description" content="<%= siteDescription %>" /> 
+        <meta property="og:site_name" content="<%= siteTitle %>" />
+
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <div class="page-container-flex">
+            <%- partial("_partials/header") %>
+
+            <%- yield %>
+            
+            <%- partial("_partials/footer") %>
+        </div>
+
+        <%- partial("_partials/scripts") %>
+    </body>
+</html>
