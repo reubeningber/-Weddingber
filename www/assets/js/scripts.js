@@ -2,6 +2,13 @@ $(document).ready(function() {
 	$('#menu').slicknav({
 		label: ''
 	});
+
+  $('.gallery-item').magnificPopup({
+    type: 'image',
+    gallery:{
+      enabled:true
+    }
+  });
 	
 	$('.js-fit-text').fitText();
 	
