@@ -3,6 +3,27 @@ $(document).ready(function() {
 		label: ''
 	});
 
+    // Reorder Photo Gallery on load
+
+    function reorder() {
+        var $photoGallery = $('.photo-gallery'),
+            grp = $photoGallery.children(),
+            cnt = grp.length;
+
+        var temp, x;
+        for (var i = 0; i < cnt; i++) {
+            temp = grp[i];
+            x = Math.floor(Math.random() * cnt);
+            grp[i] = grp[x];
+            grp[x] = temp;
+        }
+        $(grp).remove();
+        $photoGallery.append($(grp));
+    }
+    
+    reorder();
+
+
     $('.gallery-item').magnificPopup({
         type: 'image',
         gallery:{
@@ -76,24 +97,4 @@ $(document).ready(function() {
       
         $("#locations li:first").trigger("mouseenter"); 
     });
-
-    // Reorder Photo Gallery on load
-
-    function reorder() {
-        var $photoGallery = $('.photo-gallery'),
-            grp = $photoGallery.children(),
-            cnt = grp.length;
-
-        var temp, x;
-        for (var i = 0; i < cnt; i++) {
-            temp = grp[i];
-            x = Math.floor(Math.random() * cnt);
-            grp[i] = grp[x];
-            grp[x] = temp;
-        }
-        $(grp).remove();
-        $photoGallery.append($(grp));
-    }
-    
-    reorder();
 });
