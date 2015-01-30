@@ -97,4 +97,19 @@ $(document).ready(function() {
       
         $("#locations li:first").trigger("mouseenter"); 
     });
+
+    // Cool Share 
+
+    var url = 'http://weddingber.com',
+        options = {
+            twitter: {
+                text: '@ReubenIngber and @SarahBethMK are getting married! #weddingber',
+                via: ''
+            },
+
+            facebook : true,
+            googlePlus : false
+        };
+
+    $('.js-social').shareButtons(url, options);
 });
